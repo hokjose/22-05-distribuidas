@@ -23,6 +23,8 @@ spring:
             - Path=/categorias/**
           filters:
             - AuthFilter
+
+
         - id: ms-auth-service
           uri: lb://ms-auth-service
           predicates:
